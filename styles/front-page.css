@@ -1,0 +1,29 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vw;
+    padding-top: 60px;
+    align-items: center;
+}
+
+.styled-text {
+    font-size: 15vw;
+    font-family: Arial, san-serif;
+    background: linear-gradient(to bottom, rgb(18, 18, 179), rgb(81, 32, 197), rgb(115, 30, 151));
+    font-weight: bold;
+    line-height: 0.9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+
+}
+
+.styled-text span {
+    position: relative;
+
+}
+
+.lqd-highlight-brush-svg {
+    margin-top: -74.6px;
+}
