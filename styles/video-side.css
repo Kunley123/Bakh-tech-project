@@ -1,0 +1,83 @@
+.video-back-ground {
+    background-color: white;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 0 10px 55px 10px;
+}
+
+.video-play img {
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+.video-play {
+    z-index: 200;
+    width: 600px;
+    height: 55vh;
+}
+
+.video-background-div {
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    margin-top: 150px;
+    opacity: 0.3;
+}
+
+.video-side-background {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 2px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 2px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+.video-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-side text {
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    color: rgb(55, 55, 55);
+    padding: 40px;
+    line-height: 22px;
+}
+
+.inno-trans-ele-buttons {
+    margin-top: 10px;
+    z-index: 200;
+}
+
+.inno-trans-ele-buttons button {
+    padding: 8px 12px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: rgb(242, 244, 244);
+    margin-right: 12px;
+    cursor: text;
+}
+
+.video-div {}
+
+.video-control {
+    height: 50vh;
+    width: 100%;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: white;
+    box-shadow: 1px -10px 10px rgba(0, 0, 0, 0.02);
+}

@@ -1,0 +1,76 @@
+.images-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    overflow: hidden;
+    margin-top: -120px;
+}
+
+.img-div {
+    height: 100px;
+    width: 180px;
+}
+
+.first-images img,
+.second-images img {
+    height: 100%;
+    width: 100%;
+}
+
+.iwatch-pic {
+    height: 86px;
+}
+
+.man-pic {
+    height: 87px;
+}
+
+.royal-benz-pic,
+.channel-ss-pic {
+    height: 105px;
+}
+
+.coming-soon-pic {
+    height: 85px;
+}
+
+.first-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    animation: moveLeft 15s linear infinite;
+}
+
+.second-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    animation: moveRight 15s linear infinite;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.moving-images-side {
+    border-bottom-style: solid;
+    border-color: transparent;
+    padding-bottom: 40px;
+    border-width: 1px;
+}

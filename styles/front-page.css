@@ -10,7 +10,7 @@
 .styled-text {
     font-size: 15vw;
     font-family: Arial, san-serif;
-    background: linear-gradient(to bottom, rgb(18, 18, 179), rgb(81, 32, 197), rgb(115, 30, 151));
+    background: linear-gradient(to bottom, rgb(3, 3, 242), rgb(81, 32, 197), rgb(115, 30, 151));
     font-weight: bold;
     line-height: 0.9;
     -webkit-background-clip: text;
@@ -24,6 +24,31 @@
 
 }
 
-.lqd-highlight-brush-svg {
-    margin-top: -74.6px;
+.bar-and-pen {
+    margin-top: -74.5px;
+}
+
+.bakhtech-texts {
+    font-family: arial;
+    font-size: 20px;
+    color: rgb(56, 54, 54);
+    margin-top: 15px;
+}
+
+.get-started-button {
+    padding: 17px 45px;
+    color: white;
+    background-color: rgba(2, 2, 32, 0.8);
+    border-style: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.get-started-button:hover {
+    box-shadow: 5px 10px 7px rgba(71, 93, 190, 0.1);
+    margin-top: 18px;
+    transition: 0.3s;
 }
