@@ -2,6 +2,9 @@
     background-color: white;
     padding-top: 55px;
     padding-bottom: 50px;
+    margin: 0 10px;
+    border-radius: 30px;
+    margin-bottom: 40px;
 }
 
 .details-content {
@@ -9,6 +12,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(211, 207, 207);
 }
 
 .des-and-dev {
@@ -18,7 +26,7 @@
     font-weight: bold;
     padding: 5px 14px;
     background: linear-gradient(to right, rgb(236, 188, 236), rgb(202, 217, 247));
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .kinds-web {
@@ -32,12 +40,14 @@
     opacity: 0.8;
     text-align: center;
     margin-top: 0;
+    margin-right: 5px;
+    margin-left: 20px;
 }
 
 .quote-and-book-buttons {
     display: flex;
     flex-direction: row;
-
+    padding-bottom: 42px;
 }
 
 .svg-and-text {
@@ -66,6 +76,7 @@
     color: white;
     margin-top: 3px;
     margin-bottom: 3px;
+    transition: 0.3s;
 }
 
 .get-a-quote:hover,
@@ -76,6 +87,7 @@
     margin-bottom: 0;
     padding-top: 12px;
     padding-bottom: 12px;
+    transition: 0.3s;
 }
 
 .book-a-call:hover {
@@ -83,6 +95,13 @@
     border-right-style: solid;
     border-bottom-style: solid;
     border-width: 1px;
+    box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-a-call:hover path,
+.get-a-quote:hover path {
+    fill: black;
+    transition: 0.3s;
 }
 
 .get-a-quote:hover {
@@ -90,6 +109,7 @@
     border-left-style: solid;
     border-bottom-style: solid;
     border-width: 1px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .book-a-call {
@@ -98,8 +118,6 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
-
 
 .get-a-quote {
     background-color: rgb(5, 5, 45);
@@ -113,4 +131,158 @@
     cy: 50;
     r: 40;
     fill: white;
+}
+
+.head-and-thumb {
+    display: flex;
+    flex-direction: row;
+    width: 120vw;
+    justify-content: space-between;
+}
+
+.head-and-thumb img {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.many-buttons {
+    padding-top: 50%;
+    flex-wrap: wrap;
+}
+
+.many-buttons button {
+    border-style: none;
+    border-radius: 15px;
+    Padding: 5px 22px;
+    background-color: rgb(234, 241, 241);
+    transition: transform ease 3s;
+}
+
+.many-buttons button:hover {
+    transform: translateY(-300px);
+
+}
+
+
+.many-buttons button {
+    transform: rotate(calc(var(--angle, 0) * 50deg));
+}
+
+button:nth-child(1) {
+    --angle: 10;
+
+}
+
+button:nth-child(2) {
+    --angle: -30;
+
+}
+
+button:nth-child(3) {
+    --angle: -70;
+
+}
+
+button:nth-child(4) {
+    --angle: 50;
+
+}
+
+button:nth-child(5) {
+    --angle: -55;
+
+}
+
+button:nth-child(6) {
+    --angle: 60;
+
+}
+
+button:nth-child(7) {
+    --angle: 4;
+
+}
+
+button:nth-child(8) {
+    --angle: -40;
+
+}
+
+button:nth-child(9) {
+    --angle: 90;
+
+}
+
+button:nth-child(10) {
+    --angle: -90;
+
+}
+
+button:nth-child(11) {
+    --angle: 30;
+
+}
+
+button:nth-child(12) {
+    --angle: -3;
+
+}
+
+button:nth-child(13) {
+    --angle: 3;
+
+}
+
+button:nth-child(14) {
+    --angle: 19;
+
+}
+
+button:nth-child(15) {
+    --angle: 25;
+
+}
+
+button:nth-child(16) {
+    --angle: -25;
+
+}
+
+button:nth-child(17) {
+    --angle: -80;
+
+}
+
+button:nth-child(18) {
+    --angle: 80;
+
+}
+
+button:nth-child(19) {
+    --angle: 10;
+
+}
+
+button:nth-child(20) {
+    --angle: -20;
+
+}
+
+button:nth-child(21) {
+    --angle: -15;
+
 }

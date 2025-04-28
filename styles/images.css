@@ -9,6 +9,7 @@
 .img-div {
     height: 100px;
     width: 180px;
+    cursor: pointer;
 }
 
 .first-images img,
@@ -69,8 +70,21 @@
 }
 
 .moving-images-side {
+    position: relative;
     border-bottom-style: solid;
     border-color: transparent;
     padding-bottom: 40px;
     border-width: 1px;
+}
+
+.shadow-side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: inset -100px 0 30px -20px rgba(255, 255, 255, 0.4),
+        inset 100px 0 30px -20px rgba(255, 255, 255, 0.4);
+    z-index: 2;
+    pointer-events: none;
 }
